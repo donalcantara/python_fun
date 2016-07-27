@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+	<style>
+		h1, h3 {
+			text-align: center;
+		}
+		button {
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Counter</h1>
+	<h3>You've visited this site</h3>
+	<h1>{{session['counter']}}</h1>
+	<h3>times</h3>
+	<form action="/plustwo">
+		<button type="submit">plustwo</button>
+	</form>
+	<form action="/reset">
+		<button type="submit">reset</button>
+	</form>
+	<form action="/surveypage">
+      <button type="submit">Survey</button>
+    </form>
+    <form action="/numbergamepage">
+      <button type="submit">The Great Number Game</button>
+    </form>
+</body>
+</html>
