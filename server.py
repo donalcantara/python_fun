@@ -23,6 +23,9 @@ def create_user():
    session['email'] = request.form['email']
    return redirect('/show')
 
+@app.route('/back')
+def back():
+  return render_template('index.html')
 
 @app.route('/show')
 def show_user():
